@@ -1,0 +1,15 @@
+name: Feature request
+description: Suggest an idea — a new lint rule, a Figma export shape to support, etc.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem / use case
+      description: What are you trying to do, and where does figforge fall short?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Proposed solution
