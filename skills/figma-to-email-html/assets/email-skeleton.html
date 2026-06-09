@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+  Email-safe skeleton for the figma-to-email-html skill.
+  - Table layout, inline CSS, ~600px fixed width.
+  - Full-width banner via display:block (NOT inline-block).
+  - Hero is a single baked <img> (no background-image / no background-size:cover).
+  - Bulletproof CTA button with a VML fallback for Outlook.
+  - Every <img> has an explicit width; fonts have a web-safe fallback; no base64.
+  Replace the https image URLs and copy. Run `figforge lint` on the result.
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <title>Email</title>
+  <!--[if mso]>
+  <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
+  <![endif]-->
+  <style type="text/css">
+    body { margin: 0; padding: 0; }
+    img { border: 0; -ms-interpolation-mode: bicubic; display: block; }
+    table { border-collapse: collapse; }
+  </style>
+ </head>
+ <body style="margin:0;padding:0;background-color:#f4f4f4;">
+  <center style="width:100%;background-color:#f4f4f4;">
+   <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="width:600px;max-width:600px;background-color:#ffffff;font-family:Arial,Helvetica,sans-serif;">
+    <!-- HERO: one baked image (gradient/photo/effects already flattened in) -->
+    <tr>
+     <td>
+      <a href="https://example.com" target="_blank" style="display:block;width:100%;text-decoration:none;">
+       <img src="https://your-cdn.example/hero.png" width="600" alt="Headline" style="width:600px;max-width:100%;height:auto;" />
+      </a>
+     </td>
+    </tr>
+    <!-- BODY copy -->
+    <tr>
+     <td style="padding:28px 40px 8px;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;color:#222222;">
+      Replace this with your copy. Keep it as live text where you can — only bake
+      text into an image when the typography must match the design exactly.
+     </td>
+    </tr>
+    <!-- CTA: bulletproof button (VML for Outlook, padded anchor elsewhere) -->
+    <tr>
+     <td align="center" style="padding:20px 40px 36px;">
+      <!--[if mso]>
+      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://example.com" style="height:44px;v-text-anchor:middle;width:200px;" arcsize="12%" strokecolor="#000000" fillcolor="#000000">
+        <w:anchorlock/><center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Book a demo</center>
+      </v:roundrect>
+      <![endif]-->
+      <!--[if !mso]><!-->
+      <a href="https://example.com" target="_blank" style="background-color:#000000;border-radius:6px;color:#ffffff;display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;line-height:44px;text-align:center;text-decoration:none;width:200px;">Book a demo</a>
+      <!--<![endif]-->
+     </td>
+    </tr>
+    <!-- FOOTER -->
+    <tr>
+     <td style="padding:20px 40px;background-color:#f9f9f9;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#888888;text-align:center;">
+      &copy; 2026 Your Company &middot; <a href="https://example.com/unsub" style="color:#888888;">Unsubscribe</a>
+     </td>
+    </tr>
+   </table>
+  </center>
+ </body>
+</html>
