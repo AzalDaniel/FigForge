@@ -1,0 +1,24 @@
+name: Bug report
+description: Something figforge did wrong
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you expected vs. what you got.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: Minimal code or CLI command, plus a small input SVG/HTML if relevant.
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: figforge & Python version
+      placeholder: "figforge 0.1.0, Python 3.12"
+    validations:
+      required: true
